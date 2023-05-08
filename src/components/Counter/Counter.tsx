@@ -2,19 +2,11 @@ import { useState } from "react";
 import "./Counter.css";
 
 export default function Counter(): JSX.Element {
-  const [num, setNum] = useState<number>(0);
+  const [num, setNum] = useState(0);
 
-  const decreaseNumber = (): void => {
-    setNum((prevNum: number) => (prevNum > 0 ? prevNum - 1 : prevNum));
-  };
-
-  const increaseNumber = (): void => {
-    setNum((prevNum: number) => (prevNum < 100 ? prevNum + 1 : prevNum));
-  };
-
-  const resetNumber = (): void => {
-    setNum(0);
-  };
+  const decreaseNumber = () => setNum(prevNum => Math.max(0, prevNum - 1));
+  const increaseNumber = () => setNum(prevNum => Math.min(100, prevNum + 1));
+  const resetNumber = () => setNum(0);
 
   return (
     <div>

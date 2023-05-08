@@ -19,9 +19,11 @@ export default function Counter(): JSX.Element {
   return (
     <div>
       <p className="counter">{num}</p>
-      <button onClick={decreaseNumber}>-</button>
-      <button onClick={resetNumber}>Reset</button>
-      <button onClick={increaseNumber}>+</button>
+      <div className="button-container">
+        <button onClick={decreaseNumber}>-</button>
+        <button onClick={resetNumber}>Reset</button>
+        <button onClick={increaseNumber}>+</button>
+      </div>
     </div>
   );
 }

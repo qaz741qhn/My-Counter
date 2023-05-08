@@ -15,7 +15,13 @@ body {
   font-weight: bold;
 }
 
-button {
+.button-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
   background-color: #f1356d;
   border: none;
   border-radius: 0.5rem;

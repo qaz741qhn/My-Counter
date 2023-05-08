@@ -1,0 +1,29 @@
+* {
+  font-family: "Quicksand";
+}
+
+body {
+  margin: 0;
+  padding: 3rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.counter {
+  color: #f1356d;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+button {
+  background-color: #f1356d;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
